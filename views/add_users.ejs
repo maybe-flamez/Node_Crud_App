@@ -1,0 +1,44 @@
+<%- include('layout/header') %>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 mx-auto mt-4">
+            <div class="card shadow" style="background: rgba(245, 245, 245, 0.9); backdrop-filter: blur(10px);">
+                <div class="card-header" style="background-color: #333333;">
+                    <h3 class="text-light">Add New Users</h3>
+                </div>
+                <div class="card-body p-4">
+                    <form action="/add" method="post" id="add-form" enctype="multipart/form-data">
+                        <div class="mb-3">
+                            <label for="name" class="form-label" style="color: #333333;">Name</label>
+                            <input type="text" name="name" class="form-control form-control-lg" placeholder="Enter name" required style="border: 1px solid #007BFF;">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label" style="color: #333333;">Email</label>
+                            <input type="email" name="email" class="form-control form-control-lg" placeholder="Enter email" required style="border: 1px solid #007BFF;">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label" style="color: #333333;">Phone</label>
+                            <input type="tel" name="phone" class="form-control form-control-lg" placeholder="Enter phone" required style="border: 1px solid #007BFF;">
+                        </div>
+                        <div class="mb-3">
+                            <label for="image" class="form-label" style="color: #333333;">Select Image</label>
+                            <input type="file" name="image" class="form-control form-control-lg" required style="border: 1px solid #007BFF;">
+                        </div>
+                        <div class="mb-3">
+                            <input type="submit" name="submit" value="Add User" class="btn btn-dark btn-lg" style="background-color: #333333; border-color: #333333;">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<%- include('layout/footer') %>
+
+
+
+
+
